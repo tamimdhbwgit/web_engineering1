@@ -9,7 +9,7 @@
 
     <h2>Hobbies</h2>
     <h3>A YouTube video I like:</h3>
-    <iframe width="400" height="225" src="https://youtu.be/CysMrYVgyGU?si=R2tk5yoqtFOSKS64" 
+    <iframe width="400" height="225" src="https://www.youtube.com/watch?v=5rWEio2KoZM&list=PL6Zs6LgrJj3tDXv8a_elC6eT_4R5gfX4d&index=22" 
             allowfullscreen style="border-radius: 8px;"></iframe>
     <p>Gaming & monitors</p>
 
@@ -25,7 +25,58 @@
         <li><a href="https://www.rheinwerk-verlag.de/professional-computing/softwareentwicklung/data-science/?srsltid=AfmBOooxPNbpFARtqHYgjZc0nHu7VXUWlit6h_EIbMuhXnPH50kTEMUc">Data Science</a></li>
     </ul>
 
-    <p><a href="tameem.raihan@gmail.com">Email me</a> 
+  <p><a href="tameem.raihan@gmail.com">Email me</a> 
     <br/><a href="#top">↑ Top</a></p>
+  <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+  </form>
+  
+  <form action="/contact" method="post">
+    <h2>Contact Me</h2>
+
+    <!-- Full Name (Required) -->
+    <label for="full-name">Full Name*</label>
+    <input type="text" id="full-name" name="fullName" required>
+
+    <!-- Email Address -->
+    <label for="email">Email Address*</label>
+    <input type="email" id="email" name="email" required>
+
+    <!-- Phone Number -->
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone">
+
+    <!-- Gender: user can only select one option -->
+    <fieldset>
+      <legend>Gender</legend>
+      <label>
+        <input type="radio" name="gender" value="male">
+        Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female">
+        Female
+      </label>
+      <label>
+        <input type="radio" name="gender" value="other">
+        Other
+      </label>
+    </fieldset>
+
+    <!-- Favorite Color -->
+    <label for="favorite-color">Favorite Color</label>
+    <input type="color" id="favorite-color" name="favoriteColor">
+
+    <!-- Message -->
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <!-- Submit button -->
+    <button type="submit">Send</button>
+  </form>
+
 </body>
 </html>
