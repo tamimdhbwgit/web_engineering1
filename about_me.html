@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Page for Class Task</title>
+</head>
+<body>
+
+<header id="top">
+    <h1>Hi, I'm Tamim Raihan</h1>
+    <p>I am 22 years old, from Mannheim, Germany. Dual studies at DHBW Mosbach, partner company is SAP SE.</p>
+</header>
+
+<nav>
+    <a href="#about">About</a> |
+    <a href="#hobbies">Hobbies</a> |
+    <a href="#books">Books</a> |
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<section id="about">
+    <h2>About Me</h2>
+    <img src="tamim pic 2.JPEG" alt="My photo" width="200">
+</section>
+
+<section id="hobbies">
+    <h2>Hobbies</h2>
+
+    <h2>A YouTube video I like:</h2>
+    <iframe width="400" height="225" 
+        src="https://www.youtube.com/embed/5rWEio2KoZM" 
+        allowfullscreen style="border-radius: 8px;"></iframe>
+
+    <ul>
+        <li>Movies & Watching Sports</li>
+        <li>Sci-fi (Blade Runner 2049), Peaky Blinders, Maze Runner</li>
+        <li>Python data science, Web Engineering</li>
+    </ul>
+</section>
+
+<section>
+    <h2>My Skills</h2>
+    <table border="1">
+        <tr>
+            <th>Skill</th>
+            <th>Level</th>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Intermediate</td>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Beginner</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Beginner</td>
+        </tr>
+    </table>
+</section>
+
+<section id="books">
+    <h2>Favourite Books</h2>
+    <ul>
+        <li><a href="https://www.sap-press.com/treasury-and-risk-management-with-sap-s4hana_5907/">SAP TRM Book</a></li>
+        <li><a href="https://www.rheinwerk-verlag.de/professional-computing/softwareentwicklung/data-science/">Data Science</a></li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <p>
+      <a href="mailto:tameem.raihan@gmail.com">Email me</a>
+    </p>
+
+    <form action="/contact" method="post">
+
+        <label for="full-name">Full Name*</label><br>
+        <input type="text" id="full-name" name="fullName" required><br><br>
+
+        <label for="email">Email*</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+        </fieldset><br>
+
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p><a href="#top">↑ Back to top</a></p>
+</footer>
+
+</body>
+</html>
